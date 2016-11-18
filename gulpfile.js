@@ -2,21 +2,13 @@
 'use strict';
 
 var gulp = require('gulp');
-var argv = require('yargs').argv;
 var vdiff = require('website-visual-diff');
 
-// Use a function so that even if config doesn't exist,
-// all other gulp tasks will work fine
 function getDiffConfig() {
   var diffConfig = null;
   try {
-    // You can pass config options (like EVENT_ID) as arguments
-    // when calling gulp
-    // gulp diff:compare --EVENT_ID=1
     diffConfig = require('./visual_diff/visual-diff-config')();
-  } catch (e) {
-    console.log('Config file not found');
-  }
+  } catch (e) {}
 
   if (diffConfig === null) {
     throw new Error('No visual diff config file');
