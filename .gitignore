@@ -1,0 +1,3 @@
+/node_modules/
+/visual_diff/
+!/visual_diff/visual-diff-config.js

@@ -1,0 +1,13 @@
+{
+  "name": "visual-diff-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "website-visual-diff": "^1.0.1",
+    "yargs": "^6.2.0"
+  }
+}
