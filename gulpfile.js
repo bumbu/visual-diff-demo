@@ -19,7 +19,7 @@ function getDiffConfig() {
   }
 
   if (diffConfig === null) {
-    throw new Error('No visual diff config file. Create a copy from visual_diff/visual-diff-config.example.js and rename it to visual_diff/visual-diff-config.js');
+    throw new Error('No visual diff config file');
   }
 
   return diffConfig;
