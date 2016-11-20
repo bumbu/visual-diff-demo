@@ -1,10 +1,3 @@
-var defaultOptions = {
-  CATEGORY_ID: '5392005022613504',
-  EVENT_ID: '6394793986883584',
-  APPOINTMENT_ID: '5761475289284608',
-  BOOKING_ID: '5733953138851840',
-}
-
 module.exports = function(_options) {
   var options = Object.assign({}, defaultOptions, _options);
 
